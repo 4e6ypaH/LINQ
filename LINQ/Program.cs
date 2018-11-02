@@ -40,6 +40,7 @@ namespace LINQ
                 .OrderBy(x => x.Age)
                 .ThenBy(x => x.Sex)
                 .ThenBy(x => x.Balance);
+            Console.WriteLine("Сортировка");
             foreach (Person person in result)
                 Console.WriteLine("{0} - {1}", person.Name, person.Age);
             int.TryParse(Console.ReadLine(), out var exit);
